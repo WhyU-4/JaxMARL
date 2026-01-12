@@ -2,6 +2,7 @@ from .multi_agent_env import MultiAgentEnv, State
 from .mpe import (
     SimpleMPE,
     SimpleTagMPE,
+    SimpleTag3v1MPE,
     SimpleWorldCommMPE,
     SimpleSpreadMPE,
     SimpleCryptoMPE,
