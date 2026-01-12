@@ -1,6 +1,7 @@
 from .environments import (
     SimpleMPE,
     SimpleTagMPE,
+    SimpleTag3v1MPE,
     SimpleWorldCommMPE,
     SimpleSpreadMPE,
     SimpleCryptoMPE,
@@ -56,6 +57,8 @@ def make(env_id: str, **env_kwargs):
         env = SimpleMPE(**env_kwargs)
     elif env_id == "MPE_simple_tag_v3":
         env = SimpleTagMPE(**env_kwargs)
+    elif env_id == "MPE_simple_tag_3v1":
+        env = SimpleTag3v1MPE(**env_kwargs)
     elif env_id == "MPE_simple_world_comm_v3":
         env = SimpleWorldCommMPE(**env_kwargs)
     elif env_id == "MPE_simple_spread_v3":
@@ -154,6 +157,7 @@ def make(env_id: str, **env_kwargs):
 registered_envs = [
     "MPE_simple_v3",
     "MPE_simple_tag_v3",
+    "MPE_simple_tag_3v1",
     "MPE_simple_world_comm_v3",
     "MPE_simple_spread_v3",
     "MPE_simple_crypto_v3",

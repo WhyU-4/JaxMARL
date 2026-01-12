@@ -1,6 +1,7 @@
 from .simple import SimpleMPE
 from .simple_world_comm import SimpleWorldCommMPE
 from .simple_tag import SimpleTagMPE
+from .simple_tag_3v1 import SimpleTag3v1MPE
 from .simple_spread import SimpleSpreadMPE
 from .simple_push import SimplePushMPE
 from .simple_crypto import SimpleCryptoMPE
