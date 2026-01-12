@@ -76,7 +76,7 @@ def run_episode_with_policies(
         
         # Step environment
         key, step_key = jax.random.split(key)
-        obs, state, rewards, dones, infos = env.step(key, state, actions)
+        obs, state, rewards, dones, infos = env.step(step_key, state, actions)
         
         # Track rewards
         for agent in env.agents:
